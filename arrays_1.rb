@@ -4,6 +4,7 @@
 
 def doubler(numbers)
     # Write your code here
+    numbers.map{|ele|ele*2}
 end
 
 print doubler([1, 2, 3, 4]) # => [2, 4, 6, 8]

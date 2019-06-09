@@ -4,6 +4,12 @@
 
 def last_index(str, char)
     # Write your code here
+
+    new_arr = str.split("")
+    array=[]
+    new_arr.each_with_index{|word,index|array<<index if word==char}
+    array[-1]
+
 end
 
 puts last_index("abca", "a")       #=> 3

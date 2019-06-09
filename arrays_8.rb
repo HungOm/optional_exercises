@@ -4,7 +4,12 @@
 # If there is an odd number of elements, return the first half including the middle element.
 
 def first_half(array)
-    # Write your code here
+    middle_point = array.size/2
+    if array.size%2 == 0
+        array[0..middle_point-1]
+    else
+        array[0..middle_point]
+    end
 end
 
 print first_half(["Science", "Math", "Geography", "English"]) # => ["Science", "Math"]

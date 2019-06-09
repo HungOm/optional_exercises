@@ -4,6 +4,8 @@
 
 def get_full_name(hash)
     # Write your code here
+    "#{hash["first"]} #{hash["last"]}, the #{hash["title"]}"
+
 end
 
 hash1 = {"first"=>"Michael", "last"=>"Jackson", "title"=> "Superstar"}

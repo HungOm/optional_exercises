@@ -5,7 +5,9 @@
 # Solve this using map
 
 def whisper_words(words)
-    # Write your code here
+    words_arr = words[0].split(" ")
+    new_words=[]
+    return new_words<<words_arr.map{|word|word.downcase+" ..."}.join(" ")
 end
 
 print whisper_words(["KEEP The NOISE down"]) # => ["keep...", "the...", "noise...", "down..."]

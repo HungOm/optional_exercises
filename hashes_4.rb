@@ -4,7 +4,14 @@
 # that correspond with the given key.
 
 def retrieve_values(hash1, hash2, key)
+    # hash1.merge(hash2)
     # Write your code here
+    # new_arr =[]
+    values = []
+    hash1.each{|keyword,val|values<<val if keyword==key}
+    hash2.each{|k,va|values<<va if k == key}
+    values 
+
 end
 
 

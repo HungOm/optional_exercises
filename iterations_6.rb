@@ -4,7 +4,11 @@
 # Note: A palindrome is a word that is spelled the same forwards and backwards.
 
 def is_palindrome(word)
-    # Write your code here
+    if word.split('') ==word.split('').reverse
+        return true
+    end
+    false
+
 end
 
 puts is_palindrome("racecar")  # => true

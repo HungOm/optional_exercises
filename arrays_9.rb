@@ -3,8 +3,27 @@
 # The method returns an array of all positive numbers less than or equal to num that can divide num.
 
 def factors_of(num)
-    # Write your code here
+    arr=[]
+    # 1..(num.size).times do |n|
+    #     if n==0
+    #         next
+    #     elsif num%n ==0
+    #         arr<<n
+    #     end
+    # end
+    # arr<<num
+                                        #      || 
+    # ============> revised/improved solution \||/
+                                    #          \/
+    for i in 1..num 
+        if num % i == 0
+            arr<<i
+        end
+    end
+    arr
 end
+
+# need revision----
 
 print factors_of(3)   # => [1, 3]
 puts

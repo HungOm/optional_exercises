@@ -4,7 +4,12 @@
 # and its' corresponding value is the length of that word.
 
 def word_lengths(sentence)
-    # Write your code here
+    sentence = sentence.split(' ')
+    my_list = Hash.new(0)
+    sentence.each do |word|
+        my_list[word] = word.length
+    end
+    my_list
 end
 
 puts word_lengths("this is fun") 

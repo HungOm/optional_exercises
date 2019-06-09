@@ -4,6 +4,10 @@
 
 def is_div_by_5(number)
     # Write your code here
+    if number%5==0
+        return true
+    end
+    false
 end
 
 puts is_div_by_5(10) # => true

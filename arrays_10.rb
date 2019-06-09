@@ -4,6 +4,7 @@
 
 def select_odds(numbers)
     # Write your code here
+    numbers.select{|num|num if num%2 != 0}
 end
 
 print select_odds([13, 4, 3, 7, 6, 11]) 

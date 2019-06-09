@@ -5,6 +5,11 @@
 
 def sum_elements(arr1, arr2)
     # Write your code here
+    arr=[]
+    arr1.each_with_index{|word,index|arr<<word + arr2[index]}
+
+    arr
+
 end
 
 print sum_elements([7, 4, 4], [3, 2, 11]) 

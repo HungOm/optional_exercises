@@ -5,6 +5,14 @@
 
 def longer_string(str1, str2)
     # Write your code here
+    if str1.length>str2.length
+        str1
+    elsif str1.length == str2.length
+        str1
+    else
+        str2
+    end
+
 end
 
 puts longer_string("recode", "programming") # => "programming"

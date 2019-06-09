@@ -4,6 +4,15 @@
 
 def abbreviate_sentence(sent)
     # Write your code here
+    new_rr =[]
+    sent.split(" ").each do |msg|
+        if msg.length>4
+            new_rr<<msg.gsub(/[aeiou]/,"") 
+        else
+            new_rr<<msg
+        end
+    end
+    new_rr.join(" ")
 end
 
 puts abbreviate_sentence("follow the yellow brick road") # => "fllw the yllw brck road"

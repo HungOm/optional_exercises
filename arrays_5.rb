@@ -4,6 +4,12 @@
 
 def range(min, max)
     # Write your code here
+    new_ar=[]
+    for i in min..max
+        new_ar<<i
+    end
+    new_ar
+
 end
 
 print range(2, 7)   # => [2, 3, 4, 5, 6, 7]

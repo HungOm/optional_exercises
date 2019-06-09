@@ -4,6 +4,8 @@
 
 def two_d_sum(arr)
     # Write your code here
+    array = arr.flatten
+    array.inject{|acc,el| acc + el}
 end
 
 array_1 = [

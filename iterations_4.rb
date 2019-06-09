@@ -5,6 +5,7 @@
 
 def count_vowels(word)
     # Write your code here
+    word.scan(/[aeiou]/).size
 end
 
 puts count_vowels("bootcamp")  # => 3

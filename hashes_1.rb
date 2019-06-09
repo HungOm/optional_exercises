@@ -4,6 +4,7 @@
 
 def get_double_age(hash)
     # Write your code here
+    hash.map{|key,val|val*2 if key=="age"}
 end
 
 puts get_double_age({"name"=>"Recode", "age"=>5})       # => 10

@@ -4,6 +4,11 @@
 
 def yell(words)
     # Write your code here
+    # words_arr = words[0].split(" ")
+    new_words=[]
+    words.each{|word|new_words<<word.downcase+"!"}.join(" ")
+    new_words
+
 end
 
 print yell(["hello", "world"]) # => ["hello!", "world!"]

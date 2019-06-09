@@ -4,6 +4,8 @@
 
 def count_e(word)
     # Write your code here
+    num = word.scan(/e/)
+    num.count
 end
 
 puts count_e("movie") # => 1

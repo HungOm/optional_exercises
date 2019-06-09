@@ -4,6 +4,7 @@
 
 def first_in_array(arr, el1, el2)
     # Write your code here
+    arr.each{|n|return n if n == el1 || n == el2 }
 end
 
 puts first_in_array(["a", "b", "c", "d"], "d", "b"); # => "b"

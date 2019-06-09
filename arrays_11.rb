@@ -5,6 +5,7 @@
 
 def select_long_words(words)
     # Write your code here
+    words.select{|word|word if word.split('').size>4}
 end
 
 print select_long_words(["what", "are", "we", "eating", "for", "dinner", "?"]) # => ["eating", "dinner"]

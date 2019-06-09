@@ -2,8 +2,9 @@
 
 def goodbye(name)
 # Write your code here
+    "Bye #{name}."
 end
 
-puts goodbye("Ned")   # => "Bye Ned."
+p goodbye("Ned")   # => "Bye Ned."
 puts goodbye("Robb")     # => "Bye Robb."
 puts goodbye("Rickon")  # => "Bye Rickon."

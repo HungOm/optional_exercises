@@ -4,6 +4,7 @@
 
 def to_initials(name)
     # Write your code here
+    name.split(" ").map{|num|num[0].upcase}.join("")
 end
 
 puts to_initials("Lionel Messi")      # => "LM"

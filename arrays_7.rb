@@ -5,6 +5,7 @@
 
 def reverse_range(min, max)
     # Write your code here
+    (min..max).to_a.reverse
 end
 
 print reverse_range(10, 17) # => [16, 15, 14, 13, 12, 11]

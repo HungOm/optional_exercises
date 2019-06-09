@@ -5,6 +5,7 @@
 
 def count_a(word)
     # Write your code here
+    word.scan(/a|A/).size
 end
 
 puts count_a("application")  # => 2

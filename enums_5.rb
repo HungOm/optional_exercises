@@ -6,6 +6,20 @@
 
 def reverse_words(sent)
     # Write your code here
+    new_word = sent.split(" ")
+    # new_word1 = new_word.scan(/./)
+    
+    arr=[]
+    new_word.each do |word|   
+        new_word1 = word.scan(/./)
+        array=[]
+        new_word1.length.times do 
+            array.unshift(new_word1.shift)
+        end  
+        arr<<array.join('')
+   end
+#    arr<<array.join('')
+   arr.join(' ')
 end
 
 puts reverse_words('keep coding')
